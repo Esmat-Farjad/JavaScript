@@ -1,0 +1,1 @@
+console.log("This is application is for learning purposes");
