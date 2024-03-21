@@ -1,5 +1,7 @@
 const div = document.querySelector(".text");
+const elem = document.querySelector(".fade-element");
 const text = "Learn Modern JavaScript !";
+
 function textTypingEffect(element, text, i = 0){
     if(i == 0){
         element.textContent = "";
