@@ -8,18 +8,25 @@
 body{
     margin: 0;
     padding: 0;
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgb(99, 41, 41), rgb(12, 11, 11));
 }
 .container{
     margin: 20px;
 }
 h1{
-    color: $red-bg;
+    color: $white;
     font-size: 72px;
 }
 .header-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   position: relative;
+}
+.header-text .text{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+
 }
 
 

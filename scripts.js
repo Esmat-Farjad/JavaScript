@@ -11,7 +11,7 @@ function textTypingEffect(element, text, i = 0){
     if(i == text.length - 1){
         return;
     }
-    setTimeout(() => textTypingEffect(element, text, i + 1),70);
+    setTimeout(() => textTypingEffect(element, text, i + 1),50);
 }
 textTypingEffect(div, text);
 
