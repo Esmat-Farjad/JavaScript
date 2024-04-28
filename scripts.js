@@ -29,13 +29,18 @@ darkModeHandler.forEach(element => {
 });
 function toggleFunction(){
 if(window.document.body.classList.contains("dark-mode-active")){
-    document.getElementById("sun").style.display="block";
+    document.getElementById("sun").style.display="inline";
     document.getElementById("moon").style.display="none";
 } else {
-    document.getElementById("moon").style.display="block";
+    document.getElementById("moon").style.display="inline";
     document.getElementById("sun").style.display="none";
 }
 }
+
 window.onload=function(){
     toggleFunction();
+}
+function spinningSun(){
+    let value = 10;
+    
 }

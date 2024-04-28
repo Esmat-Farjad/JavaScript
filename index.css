@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -25,11 +25,6 @@ ul li {
   cursor: pointer;
   padding: 10px;
   margin: 0;
-}
-
-ul li:hover {
-  background-color: lightgray;
-  transition: all 0.5s ease-in-out;
 }
 
 .nav-item a {
@@ -62,8 +57,37 @@ ul li:hover {
   background-color: #1E3050;
   color: white;
 }
+.dark-mode-active li a {
+  color: white;
+}
 
 .dark-mode {
-  padding: 10px;
   cursor: pointer;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 20rem;
+}
+
+.header-text .text {
+  font-weight: lighter;
+}
+
+.text-center {
+  align-items: center;
+}
+
+.spinner {
+  animation: spin 2s linear infinite; /* "spin" is the name of the animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=index.css.map */
