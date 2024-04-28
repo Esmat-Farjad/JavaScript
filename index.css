@@ -10,7 +10,6 @@ body {
   padding: 0;
   width: auto;
   height: 100vh;
-  background-image: linear-gradient(rgb(99, 41, 41), rgb(12, 11, 11));
 }
 
 .container {
@@ -18,16 +17,53 @@ body {
 }
 
 h1 {
-  color: white;
   font-size: 72px;
 }
 
-.header-text {
-  position: relative;
+ul li {
+  display: inline;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
 }
 
-.header-text .text {
-  position: absolute;
-  top: 100%;
-  left: 25%;
+ul li:hover {
+  background-color: lightgray;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(29, 28, 28);
+  padding: 0px 30px;
+}
+
+.nav-item a:hover {
+  color: #0197f6;
+  transition: all 0.5s ease-in-out;
+}
+
+.container {
+  margin: 3rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.object-rotation {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.dark-mode-active {
+  background-color: #1E3050;
+  color: white;
+}
+
+.dark-mode {
+  padding: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
