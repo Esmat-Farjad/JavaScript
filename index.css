@@ -75,8 +75,9 @@ ul li {
   font-weight: lighter;
 }
 
-.text-center {
-  align-items: center;
+.center-div {
+  display: grid;
+  place-items: center;
 }
 
 .spinner {
@@ -90,4 +91,22 @@ ul li {
   to {
     transform: rotate(360deg);
   }
+}
+button[name=get-started] {
+  background-color: transparent;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2rem;
+  outline: none;
+  color: inherit;
+  box-shadow: 0px 0px 16px;
+}
+
+button[name=get-started]:hover {
+  outline: none;
+  color: inherit;
+  font-weight: 500;
+  border: 1px solid rgb(197, 196, 196);
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=index.css.map */

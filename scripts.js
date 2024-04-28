@@ -38,9 +38,6 @@ if(window.document.body.classList.contains("dark-mode-active")){
 }
 
 window.onload=function(){
+    window.document.body.classList.add("dark-mode-active");
     toggleFunction();
-}
-function spinningSun(){
-    let value = 10;
-    
 }
