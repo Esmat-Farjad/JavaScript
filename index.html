@@ -33,7 +33,56 @@
         </div>
     </div>
     <div class="container">
-       
+        <div class="grid-container">
+            <div class="card grid-item">
+                <div class="card-header">
+                    Function in JS
+                </div>
+                <div class="card-body code-snippet">
+                    <pre>
+                        <code>
+                            function textTypingEffect(element, text, i = 0){
+                                if(i == 0){
+                                    element.textContent = &#x22;&#x22;;
+                                }
+                                element.textContent += text[i];
+                                //if we reached the end of the string 
+                                if(i == text.length - 1){
+                                    return;
+                                }
+                                setTimeout(() =&#x3E; textTypingEffect(element, text, i + 1),50);
+                            }   
+                        </code>
+                    </pre>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+            <div class="card grid-item">
+                <div class="card-header">
+                    Function in JS
+                </div>
+                <div class="card-body code-snippet">
+                    <pre>
+                        <code>
+                            function textTypingEffect(element, text, i = 0){
+                                if(i == 0){
+                                    element.textContent = &#x22;&#x22;;
+                                }
+                                element.textContent += text[i];
+                                //if we reached the end of the string 
+                                if(i == text.length - 1){
+                                    return;
+                                }
+                                setTimeout(() =&#x3E; textTypingEffect(element, text, i + 1),50);
+                            }   
+                        </code>
+                    </pre>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
     
     </div>
     <script src="scripts.js"></script>
