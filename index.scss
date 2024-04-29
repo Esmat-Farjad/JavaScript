@@ -87,71 +87,54 @@ ul li{
       transform: rotate(360deg);
     }
 }
-button[name="get-started"]{
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-    border-radius: 8px;
-    padding: 0.7rem 2rem;
-    outline: none;
-    color: inherit;
-    box-shadow: 0px 0px 16px;
 
-}
-button[name="get-started"]:hover{
-    outline: none;
-    color: inherit;
-    font-weight: 500;
-    border: 1px solid rgb(197, 196, 196);
-    transition: all 0.5s ease-in-out;
-}
-// style extended
-/* Define a class for code snippets */
-.code-snippet {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #f7f7f7;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    line-height: 1.5;
-    overflow-x: auto; /* Enable horizontal scrolling for long lines */
-  }
-  
-  /* Style line numbers */
-  .code-snippet pre {
-    counter-reset: line; /* Initialize line number counter */
-  }
-  
-  .code-snippet pre code {
-    counter-increment: line; /* Increment line number counter */
-  }
-  
-  .code-snippet pre code:before {
-    content: counter(line); /* Display line number */
+.btn {
+    background-color: teal; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    width: 30px; /* Adjust as needed */
-    padding-right: 10px;
-    color: #999;
-    text-align: right;
-    user-select: none;
-  }
-  
-  /* Syntax highlighting */
-  .code-snippet pre code {
-    /* Define colors for different types of code elements */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+
+.btn:hover{
+    background-color: rgb(5, 88, 88);
+    color: white;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
     
-  }
-  
-  /* Example syntax highlighting for JavaScript */
-  .code-snippet pre code .keyword {
-    color: #0077aa;
-  }
-  
-  .code-snippet pre code .comment {
-    color: #808080;
-  }
-  
-  .code-snippet pre code .string {
-    color: #008000;
-  }
-  
+}
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 30px;
+}
+.grid-item{
+    text-align: center;
+    grid-gap: 10px;
+}
+.card{
+    width: 35rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 16px #1E3050;
+}
+.card-body{
+    overflow: hidden;
+    height: 18rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.card-body > img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}

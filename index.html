@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
@@ -29,62 +30,31 @@
             <h1 class="text"></h1>
         </div>
         <div class="button-holder center-div">
-            <button type="button" name="get-started">Get Started</button>
+            <button type="button" class="btn">Get Started</button>
         </div>
+        
     </div>
     <div class="container">
         <div class="grid-container">
             <div class="card grid-item">
-                <div class="card-header">
-                    Function in JS
-                </div>
-                <div class="card-body code-snippet">
-                    <pre>
-                        <code>
-                            function textTypingEffect(element, text, i = 0){
-                                if(i == 0){
-                                    element.textContent = &#x22;&#x22;;
-                                }
-                                element.textContent += text[i];
-                                //if we reached the end of the string 
-                                if(i == text.length - 1){
-                                    return;
-                                }
-                                setTimeout(() =&#x3E; textTypingEffect(element, text, i + 1),50);
-                            }   
-                        </code>
-                    </pre>
-                </div>
-                <div class="card-footer">
+                <div class="card-body" data-image-value="./assets/carbon.svg">
+                   <img class="card-image" src="./assets/carbon.svg" alt="">
                 </div>
             </div>
             <div class="card grid-item">
-                <div class="card-header">
-                    Function in JS
+                <div class="card-body" data-image-value="./assets/carbon.svg">
+                   <img src="./assets/carbon.svg" alt="">
                 </div>
-                <div class="card-body code-snippet">
-                    <pre>
-                        <code>
-                            function textTypingEffect(element, text, i = 0){
-                                if(i == 0){
-                                    element.textContent = &#x22;&#x22;;
-                                }
-                                element.textContent += text[i];
-                                //if we reached the end of the string 
-                                if(i == text.length - 1){
-                                    return;
-                                }
-                                setTimeout(() =&#x3E; textTypingEffect(element, text, i + 1),50);
-                            }   
-                        </code>
-                    </pre>
-                </div>
-                <div class="card-footer">
+            </div>
+            <div class="card grid-item">
+                <div class="card-body" data-image-value="./assets/carbon.svg">
+                   <img src="./assets/carbon.svg" alt="">
                 </div>
             </div>
         </div>
-    
+        
     </div>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js”></script>
     <script src="scripts.js"></script>
 </body>
 </html>
